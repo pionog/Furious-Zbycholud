@@ -309,129 +309,129 @@ int startTheGame(int argc, char** argv){
 	//SDL_ShowCursor(SDL_DISABLE);
 
 	// wczytanie obrazka cs8x8.bmp
-	charset = SDL_LoadBMP("./cs8x8.bmp");
+	charset = SDL_LoadBMP("./assets/cs8x8.bmp");
 	if (charset == NULL) {
 		printf("SDL_LoadBMP(cs8x8.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
 	SDL_SetColorKey(charset, true, 0x000000);
-	eti = SDL_LoadBMP("./eti.bmp");
+	eti = SDL_LoadBMP("./assets/eti.bmp");
 	if (eti == NULL) {
 		printf("SDL_LoadBMP(eti.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	title = SDL_LoadBMP("./title.bmp");
+	title = SDL_LoadBMP("./assets/title.bmp");
 	if (title == NULL) {
 		printf("SDL_LoadBMP(title.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	zbycholud = SDL_LoadBMP("./zbycholud.bmp");
+	zbycholud = SDL_LoadBMP("./assets/zbycholud.bmp");
 	if (zbycholud == NULL) {
 		printf("SDL_LoadBMP(zbycholud.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	shot = SDL_LoadBMP("./shot.bmp");
+	shot = SDL_LoadBMP("./assets/shot.bmp");
 	if (shot == NULL) {
 		printf("SDL_LoadBMP(shot.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	shotplayer = SDL_LoadBMP("./shotplayer.bmp");
+	shotplayer = SDL_LoadBMP("./assets/shotplayer.bmp");
 	if (shotplayer == NULL) {
 		printf("SDL_LoadBMP(shotplayer.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	playership = SDL_LoadBMP("./spaceship.bmp");
+	playership = SDL_LoadBMP("./assets/spaceship.bmp");
 	if (playership == NULL) {
 		printf("SDL_LoadBMP(spaceship.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	playershipLeft = SDL_LoadBMP("./spaceshipLeft.bmp");
+	playershipLeft = SDL_LoadBMP("./assets/spaceshipLeft.bmp");
 	if (playership == NULL) {
 		printf("SDL_LoadBMP(spaceshipLeft.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	playershipRight = SDL_LoadBMP("./spaceshipRight.bmp");
+	playershipRight = SDL_LoadBMP("./assets/spaceshipRight.bmp");
 	if (playership == NULL) {
 		printf("SDL_LoadBMP(spaceshipRight.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	playershipForward = SDL_LoadBMP("./spaceshipForward.bmp");
+	playershipForward = SDL_LoadBMP("./assets/spaceshipForward.bmp");
 	if (playership == NULL) {
 		printf("SDL_LoadBMP(spaceshipForward.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	playershipBackward = SDL_LoadBMP("./spaceshipBackward.bmp");
+	playershipBackward = SDL_LoadBMP("./assets/spaceshipBackward.bmp");
 	if (playership == NULL) {
 		printf("SDL_LoadBMP(spaceshipBackward.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	heal = SDL_LoadBMP("./heal.bmp");
+	heal = SDL_LoadBMP("./assets/heal.bmp");
 	if (heal == NULL) {
 		printf("SDL_LoadBMP(heal.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	heart = SDL_LoadBMP("./serduszko.bmp");
+	heart = SDL_LoadBMP("./assets/serduszko.bmp");
 	if (heart == NULL) {
 		printf("SDL_LoadBMP(serduszko.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	heartHalf = SDL_LoadBMP("./serduszkopol.bmp");
+	heartHalf = SDL_LoadBMP("./assets/serduszkopol.bmp");
 	if (heartHalf == NULL) {
 		printf("SDL_LoadBMP(serduszkopol.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	heartEmpty = SDL_LoadBMP("./serduszkonic.bmp");
+	heartEmpty = SDL_LoadBMP("./assets/serduszkonic.bmp");
 	if (heartEmpty == NULL) {
 		printf("SDL_LoadBMP(serduszkonic.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	background = SDL_LoadBMP("./background.bmp");
+	background = SDL_LoadBMP("./assets/background.bmp");
 	if (background == NULL) {
 		printf("SDL_LoadBMP(background.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
 	// wczytywanie grafik ocen
-	gradeA = SDL_LoadBMP("./animatedA.bmp");
+	gradeA = SDL_LoadBMP("./assets/animatedA.bmp");
 	if (gradeA == NULL) {
 		printf("SDL_LoadBMP(animatedA.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	gradeAPlus = SDL_LoadBMP("./animatedAPlus.bmp");
+	gradeAPlus = SDL_LoadBMP("./assets/animatedAPlus.bmp");
 	if (gradeAPlus == NULL) {
 		printf("SDL_LoadBMP(animatedAPlus.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	gradeB = SDL_LoadBMP("./animatedB.bmp");
+	gradeB = SDL_LoadBMP("./assets/animatedB.bmp");
 	if (gradeB == NULL) {
 		printf("SDL_LoadBMP(animatedB.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	gradeBPlus = SDL_LoadBMP("./animatedBPlus.bmp");
+	gradeBPlus = SDL_LoadBMP("./assets/animatedBPlus.bmp");
 	if (gradeBPlus == NULL) {
 		printf("SDL_LoadBMP(animatedBPlus.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	gradeC = SDL_LoadBMP("./animatedC.bmp");
+	gradeC = SDL_LoadBMP("./assets/animatedC.bmp");
 	if (gradeC == NULL) {
 		printf("SDL_LoadBMP(animatedC.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	gradeCPlus = SDL_LoadBMP("./animatedCPlus.bmp");
+	gradeCPlus = SDL_LoadBMP("./assets/animatedCPlus.bmp");
 	if (gradeCPlus == NULL) {
 		printf("SDL_LoadBMP(animatedCPlus.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	gradeD = SDL_LoadBMP("./animatedD.bmp");
+	gradeD = SDL_LoadBMP("./assets/animatedD.bmp");
 	if (gradeD == NULL) {
 		printf("SDL_LoadBMP(animatedD.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	gradeDPlus = SDL_LoadBMP("./animatedDPlus.bmp");
+	gradeDPlus = SDL_LoadBMP("./assets/animatedDPlus.bmp");
 	if (gradeDPlus == NULL) {
 		printf("SDL_LoadBMP(animatedDPlus.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
 	};
-	gradeF = SDL_LoadBMP("./animatedf.bmp");
+	gradeF = SDL_LoadBMP("./assets/animatedf.bmp");
 	if (gradeF == NULL) {
 		printf("SDL_LoadBMP(animatedf.bmp) error: %s\n", SDL_GetError());
 		returningEr(screen, scrtex, window, renderer);
